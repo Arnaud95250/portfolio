@@ -1,0 +1,58 @@
+#about{
+   margin-top: 25vh;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   .content_about{
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      h1{
+         text-align: center;
+         padding-top: 50px;
+         font-family: "Trochut", serif;
+         font-weight: 700;
+         font-size: 1.6rem;
+         color: #222725;
+         width: 100%;
+      }
+      span{
+         font-size: 1.4em ;
+         font-weight: 100;
+         text-align: center;
+         padding-bottom: 50px;
+      }
+      p{
+         font-size: 1.2rem;
+         margin: 30px 0px 0px 30px;
+      }
+      .components_skills{
+         width: 100%;
+         display: flex;
+         justify-content: center;
+         h4{
+            font-family: "Muli",sans-serif;
+            margin-top: 70px;
+            font-weight: 900;
+            letter-spacing: 2px;
+            font-size: 0.8rem;
+            margin-top: 5rem;
+            text-transform: uppercase;
+            width: 100%;
+         } 
+      }    
+   }
+}
+
+@media (max-width: 1024px){
+   #about{
+      margin-top: 9vh;
+      .content_about{
+         width: 95%;
+         .hr_hidden{
+            display: none;
+         }
+      }      
+   }
+}

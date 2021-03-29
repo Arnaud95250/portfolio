@@ -1,0 +1,48 @@
+#projets{
+  margin-top: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  .content_projets{
+    margin-top: 10vh;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    div p{
+      margin-top: 4vh;
+      font-size: 18px;
+    }
+    div p a{
+      margin-left: 5px;
+      font-weight: 700;
+      cursor: pointer;
+      color: black;
+    }
+    div p a:hover{
+      color: rgb(163, 13, 25);
+    }
+  }
+}
+
+@media (max-width: 1024px){
+  #projets{
+     .content_projets{
+      width: 95%;
+      div p{
+        margin: 4vh 0vh 4vh 0vh;
+        font-size: 18px;
+      }
+      div p a{
+        margin-left: 5px;
+        font-weight: 700;
+        cursor: pointer;
+        color: black;
+      }
+      div p a:hover{
+        color: rgb(163, 13, 25);
+      }
+     }
+  }
+}

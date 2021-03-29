@@ -1,23 +1,55 @@
-import logo from './logo.svg';
-import './App.css';
+//import fichier SCSS
+import "./App.scss";
+import "./assets/scss/components/header.scss";
+import "./assets/scss/components/footer.scss";
+import "./assets/scss/components/anime.scss";
+import "./assets/scss/components/skills.scss";
+import "./assets/scss/components/sideBar.scss";
+
+import "./assets/scss/components/projets/listProjects.scss";
+import "./assets/scss/components/projets/marvel.scss";
+// import "./assets/scss/components/projets/deliveroo.scss";
+// import "./assets/scss/components/projets/toDoList.scss";
+
+import "./assets/scss/containers/home.scss";
+import "./assets/scss/containers/projets.scss";
+import "./assets/scss/containers/about.scss";
+import "./assets/scss/containers/contact.scss";
+
+// Import components
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+
+// Import components
+import Home from "./containers/Home";
+import Contact from "./containers/Contact";
+import Projets from "./containers/Projets";
+import About from "./containers/About";
+
+// Package Yarn
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Header />
+        <Switch>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/projets">
+            <Projets />
+          </Route>
+          <Route path="/contact">
+            <Contact />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }

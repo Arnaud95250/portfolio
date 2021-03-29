@@ -1,0 +1,59 @@
+#header{
+    line-height: 10vh;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    top: 0px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    hr{
+    z-index: 3;
+    width: 100%;
+    top: 10vh;
+    position: fixed;
+    background: rgb(204, 204, 204);
+    }
+    nav{
+        width: 60%;
+    }
+    nav ul{
+        display: flex;
+        justify-content: flex-end;
+        list-style:none;
+    }
+    nav ul li a{
+        margin-left: 20px;
+        color: rgb(0, 0, 0);
+        font-size: 15px;
+        font-weight: 600;
+    }
+    nav ul li a:hover{
+        border-bottom: solid 4px rgb(163, 13, 25);
+        padding-bottom: 3.1vh;
+        transition: 0.6s;
+        // border-radius: 5px;
+    }
+    nav ul li:last-child{
+        margin-right: 20px;
+        
+    }
+    .burger_menu{
+        display: none;
+    }
+}
+
+@media (max-width: 1024px){
+    #header{
+        height: 10vh;
+        background-color: white;
+        ul li{
+            display: none;
+        }
+        .burger_menu{
+            display: block;
+        }
+  
+    }
+}
