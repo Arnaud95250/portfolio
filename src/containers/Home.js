@@ -10,11 +10,15 @@ const Home = () => {
         <div>
           <h1>Hi, I'm Arnaud.</h1>
           <p>
-            Ex-marketer en reconversion vers le côté obscur (👩‍💻). Développement
-            web/mobile, marketing, design, stratégie... On a sûrement des choses
-            à se dire sur votre prochain projet !
+            Ex-employé du BTP j'ai depuis bientôt 2 ans changé de secteur
+            d'activité pour être (👩‍💻)développeur Web et mobile, front-end mais
+            aussi Back-end et tout ca en JAVASCRIPT 😉.
           </p>
-          <p>Sinon, en ce moment je suis Dev FullStack chez Fleet ! 🦄</p>
+          <p>On a sûrement des choses à se dire sur votre prochain projet !</p>
+          <p>
+            Sinon, Actuellement je suis à la recherche d'un poste comme dev
+            Full-Stack Js.
+          </p>
         </div>
       </div>
     </div>
