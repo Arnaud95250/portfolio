@@ -7,9 +7,7 @@ import "./assets/scss/components/skills.scss";
 import "./assets/scss/components/sideBar.scss";
 
 import "./assets/scss/components/projets/listProjects.scss";
-import "./assets/scss/components/projets/marvel.scss";
-// import "./assets/scss/components/projets/deliveroo.scss";
-// import "./assets/scss/components/projets/toDoList.scss";
+import "./assets/scss/components/projets/projectSelected.scss";
 
 import "./assets/scss/containers/home.scss";
 import "./assets/scss/containers/projets.scss";

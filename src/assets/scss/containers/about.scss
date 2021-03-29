@@ -47,12 +47,19 @@
 
 @media (max-width: 1024px){
    #about{
-      margin-top: 9vh;
+      margin-top: 5vh;
       .content_about{
          width: 95%;
          .hr_hidden{
             display: none;
          }
+         .components_skills{
+            h4{
+               margin: 70px 0px 0px 10px;
+               font-size: 1rem;
+               margin-top: 5rem;
+            } 
+         }    
       }      
    }
 }

@@ -46,8 +46,11 @@
 
 @media (max-width: 1024px){
     #header{
-        height: 10vh;
+        height: 6vh;
         background-color: white;
+        hr{
+            top: 6vh;
+        }
         ul li{
             display: none;
         }

@@ -7,7 +7,6 @@
     right: 36px;
     top: 25px;
 }
-
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
 background: #373a47;
@@ -70,4 +69,16 @@ transition: color 0.2s;
 }
 .bm-item:hover {
 color: #ffffff;
+}
+
+
+@media (max-width: 1024px){
+    /* Position and sizing of burger button */
+    .bm-burger-button {
+        position: fixed;
+        width: 25px;
+        height: 25px;
+        right: 20px;
+        top: 15px;
+    }
 }

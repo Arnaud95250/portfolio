@@ -6,3 +6,14 @@
         left: 20px; 
     }
 }
+
+@media (max-width: 1024px){
+    #anime{
+        img{
+            width: auto;
+            height: 6.5vh;
+            position: fixed;
+            left: 20px; 
+        }
+    }
+}
