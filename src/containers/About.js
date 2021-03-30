@@ -13,11 +13,11 @@ const About = () => {
         <span>(mais si tu es la, c'est que tu le sais déjà).</span>
         <hr />
         <p>
-          Depuis plus loin que je me souvienne, l'informatique a toujours été un
-          plaisir à tous les niveaux j'ai toujours aimé comprendre et régler les
-          soucis des autres et je croit que cette idée ne m’a jamais vraiment
-          quittée puisque à 30 ans, je reprenais une formation de développeur
-          web pour en faire mon nouveau métier...
+          Depuis toujours, l'informatique a été un plaisir à tous les niveaux,
+          j'ai toujours aimé comprendre et régler les soucis des autres et je
+          croit que cette idée ne m’a jamais vraiment quittée puisque à 30 ans,
+          je reprenais une formation de développeur web pour en faire mon
+          nouveau métier...
         </p>
         <p>
           Bien-sûr avant d'en arriver là, j'ai travaillé plusieurs années dans

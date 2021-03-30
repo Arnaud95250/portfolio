@@ -23,6 +23,7 @@ const Marvel = () => {
           </div>
         </Carousel>
       </div>
+
       <div className="content_project_selected">
         <hr />
         <div className="info_header">
