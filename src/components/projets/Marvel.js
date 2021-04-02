@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import React, { Component } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
-import test from "../../assets/img/marvel.jpg";
+import test from "../../assets/img/marvel/marvel.jpg";
 
 const Marvel = () => {
   return (

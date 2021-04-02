@@ -1,7 +1,7 @@
 // Import Image
-import deliveroo from "../../assets/img/deliveroo.jpg";
-import marvel from "../../assets/img/marvel.jpg";
-import todolist from "../../assets/img/todolist.jpg";
+import deliveroo from "../../assets/img/deliveroo/deliveroo.jpg";
+import marvel from "../../assets/img/marvel/marvel.jpg";
+import todolist from "../../assets/img/todolist/todolist.jpg";
 import chevronLeft from "../../assets/img/chevron-left.svg";
 
 // Import components/projects

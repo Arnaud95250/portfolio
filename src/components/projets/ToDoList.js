@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import React, { Component } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
-import test from "../../assets/img/todolist.jpg";
+import test from "../../assets/img/todolist/todolist.jpg";
 
 const ToDoList = () => {
   return (
@@ -45,7 +45,7 @@ const ToDoList = () => {
             <p>Création d'une application simple de type Todolist.</p>
             <Link
               to={{
-                pathname: "https://sharp-lichterman-1c20d3.netlify.app",
+                pathname: "https://nostalgic-babbage-da7a0d.netlify.app/",
               }}
               target="_blank"
             >

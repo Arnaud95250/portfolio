@@ -2,7 +2,13 @@ import { Link } from "react-router-dom";
 import React, { Component } from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
-import test from "../../assets/img/deliveroo.jpg";
+import test from "../../assets/img/deliveroo/deliveroo.jpg";
+import gifDeliveroo from "../../assets/img/deliveroo/gif/gif-deliveroo.gif";
+import del1 from "../../assets/img/deliveroo/deliveroo-1.png";
+import del2 from "../../assets/img/deliveroo/deliveroo-2.png";
+import del3 from "../../assets/img/deliveroo/deliveroo-3.png";
+import del4 from "../../assets/img/deliveroo/deliveroo-4.png";
+import del5 from "../../assets/img/deliveroo/deliveroo-5.png";
 
 const Deliveroo = () => {
   return (
@@ -10,16 +16,22 @@ const Deliveroo = () => {
       <div className="carousel">
         <Carousel>
           <div>
-            <img src={test} />
+            <img src={gifDeliveroo} alt="gif" />
           </div>
           <div>
-            <img src={test} />
+            <img src={del1} alt="" />
           </div>
           <div>
-            <img src={test} />
+            <img src={del2} />
           </div>
           <div>
-            <img src={test} />
+            <img src={del5} />
+          </div>
+          <div>
+            <img src={del3} />
+          </div>
+          <div>
+            <img src={del4} />
           </div>
         </Carousel>
       </div>
@@ -48,7 +60,7 @@ const Deliveroo = () => {
             </p>
             <Link
               to={{
-                pathname: "https://sharp-lichterman-1c20d3.netlify.app",
+                pathname: "https://youthful-lewin-8421d0.netlify.app/",
               }}
               target="_blank"
             >
@@ -76,12 +88,12 @@ const Deliveroo = () => {
               </li>
             </ul>
             <h3>STACK :</h3>
-            <p>React, axios, numeral, NodeJS, cors, express</p>
+            <p>React, axios, NodeJS, cors, express</p>
             <h3>CODE DU PROJET :</h3>
             <div className="info_git">
               <Link
                 to={{
-                  pathname: "https://github.com/Arnaud95250/marvel-front",
+                  pathname: "https://github.com/Arnaud95250/deliveroo-front",
                 }}
                 target="_blank"
                 className="button_git test2"
@@ -92,7 +104,7 @@ const Deliveroo = () => {
               </Link>
               <Link
                 to={{
-                  pathname: "https://github.com/Arnaud95250/marvel-back",
+                  pathname: "https://github.com/Arnaud95250/deliveroo-back",
                 }}
                 target="_blank"
                 className="button_git"
