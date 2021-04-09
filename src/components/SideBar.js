@@ -1,9 +1,9 @@
 import React from "react";
 import { slide as Menu } from "react-burger-menu";
 import { Link } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
-export default (props) => {
+export default () => {
   let boolean = Boolean.valueOf({ areMenusOpen: true });
   const [state, setState] = useState((boolean = true));
 

@@ -1,26 +1,26 @@
 import { Link } from "react-router-dom";
-import React, { Component } from "react";
+import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
-import test from "../../assets/img/todolist/todolist.jpg";
+import todoGif from "../../assets/img/todolist/gif/todolist.gif";
+import todo1 from "../../assets/img/todolist/todo1.png";
+import todo2 from "../../assets/img/todolist/todo2.png";
+import todo3 from "../../assets/img/todolist/todo3.png";
+import todo4 from "../../assets/img/todolist/todo4.png";
 
 const ToDoList = () => {
+  const image = [todoGif, todo1, todo2, todo3, todo4];
   return (
     <div className="project_selected">
       <div className="carousel">
         <Carousel>
-          <div>
-            <img src={test} />
-          </div>
-          <div>
-            <img src={test} />
-          </div>
-          <div>
-            <img src={test} />
-          </div>
-          <div>
-            <img src={test} />
-          </div>
+          {image.map((elem, index) => {
+            return (
+              <div key={index}>
+                <img src={elem} alt="" />
+              </div>
+            );
+          })}
         </Carousel>
       </div>
       <div className="content_project_selected">
@@ -82,7 +82,7 @@ const ToDoList = () => {
             <div className="info_git">
               <Link
                 to={{
-                  pathname: "https://github.com/Arnaud95250/marvel-front",
+                  pathname: "https://github.com/Arnaud95250/todo-list",
                 }}
                 target="_blank"
                 className="button_git test2"
@@ -91,15 +91,9 @@ const ToDoList = () => {
                   <span>FrontEnd</span>
                 </div>
               </Link>
-              <Link
-                to={{
-                  pathname: "https://github.com/Arnaud95250/marvel-back",
-                }}
-                target="_blank"
-                className="button_git"
-              >
+              <Link className="button_git">
                 <div>
-                  <span>BackEnd</span>
+                  <span>BackEnd aucun</span>
                 </div>
               </Link>
             </div>

@@ -1,26 +1,40 @@
 import { Link } from "react-router-dom";
-import React, { Component } from "react";
+import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
-import test from "../../assets/img/marvel/marvel.jpg";
+import marvGif from "../../assets/img/marvel/gif/marvelGif.gif";
+import marv1 from "../../assets/img/marvel/marv1.png";
+import marv2 from "../../assets/img/marvel/marv2.png";
+import marv3 from "../../assets/img/marvel/marv3.png";
+import marv4 from "../../assets/img/marvel/marv4.png";
+import marv5 from "../../assets/img/marvel/marv5.png";
+import marv6 from "../../assets/img/marvel/marv6.png";
+import marv7 from "../../assets/img/marvel/marv7.png";
+// import marv8 from "../../assets/img/marvel/marv8.png";
 
 const Marvel = () => {
+  const image = [
+    marvGif,
+    marv1,
+    marv2,
+    marv3,
+    marv4,
+    marv5,
+    marv6,
+    marv7,
+    // marv8,
+  ];
   return (
     <div className="project_selected">
       <div className="carousel">
         <Carousel>
-          <div>
-            <img src={test} />
-          </div>
-          <div>
-            <img src={test} />
-          </div>
-          <div>
-            <img src={test} />
-          </div>
-          <div>
-            <img src={test} />
-          </div>
+          {image.map((elem, index) => {
+            return (
+              <div key={index} style={{ background: "black", height: "100%" }}>
+                <img src={elem} alt="" />
+              </div>
+            );
+          })}
         </Carousel>
       </div>
 

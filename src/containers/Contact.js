@@ -9,7 +9,7 @@ const Contact = () => {
     <div id="contact">
       <div className="content_contact">
         <div className="img_contact">
-          <img src={contat} />
+          <img src={contat} alt="" />
         </div>
         <div>
           <h1>Pour me joindre</h1>
@@ -23,7 +23,7 @@ const Contact = () => {
             }}
             target="_blank"
           >
-            <img src={linkedin} />
+            <img src={linkedin} alt="" />
           </Link>
           <Link
             to={{
@@ -31,7 +31,7 @@ const Contact = () => {
             }}
             target="_blank"
           >
-            <img src={githubLogo} />
+            <img src={githubLogo} alt="" />
           </Link>
         </div>
       </div>

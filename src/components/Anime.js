@@ -21,14 +21,14 @@ const Anime = () => {
   }, []);
 
   const animePerso = () => {
-    setAnime(<img src={animation[0]} />);
-    setTimeout(function () {
-      setAnime(<img src={animation[1]} />);
-      setTimeout(function () {
-        setAnime(<img src={animation[2]} />);
-        setTimeout(function () {
-          setAnime(<img src={animation[3]} />);
-          setTimeout(function () {
+    setAnime(<img src={animation[0]} alt="" />);
+    setTimeout(function() {
+      setAnime(<img src={animation[1]} alt="" />);
+      setTimeout(function() {
+        setAnime(<img src={animation[2]} alt="" />);
+        setTimeout(function() {
+          setAnime(<img src={animation[3]} alt="" />);
+          setTimeout(function() {
             return requestAnimationFrame(animePerso);
           }, 250);
         }, 250);

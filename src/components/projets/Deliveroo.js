@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
-import React, { Component } from "react";
+import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
-import test from "../../assets/img/deliveroo/deliveroo.jpg";
 import gifDeliveroo from "../../assets/img/deliveroo/gif/gif-deliveroo.gif";
 import del1 from "../../assets/img/deliveroo/deliveroo-1.png";
 import del2 from "../../assets/img/deliveroo/deliveroo-2.png";
@@ -11,28 +10,19 @@ import del4 from "../../assets/img/deliveroo/deliveroo-4.png";
 import del5 from "../../assets/img/deliveroo/deliveroo-5.png";
 
 const Deliveroo = () => {
+  const image = [gifDeliveroo, del1, del2, del3, del4, del5];
+
   return (
     <div className="project_selected">
       <div className="carousel">
         <Carousel>
-          <div>
-            <img src={gifDeliveroo} alt="gif" />
-          </div>
-          <div>
-            <img src={del1} alt="" />
-          </div>
-          <div>
-            <img src={del2} />
-          </div>
-          <div>
-            <img src={del5} />
-          </div>
-          <div>
-            <img src={del3} />
-          </div>
-          <div>
-            <img src={del4} />
-          </div>
+          {image.map((elem, index) => {
+            return (
+              <div key={index}>
+                <img src={elem} alt="" />
+              </div>
+            );
+          })}
         </Carousel>
       </div>
       <div className="content_project_selected">

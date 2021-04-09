@@ -1,26 +1,41 @@
 import { Link } from "react-router-dom";
-import React, { Component } from "react";
+import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
-import test from "../../assets/img/marvel.jpg";
+import tellGif from "../../assets/img/tellmemore/gif/gif_tellmemore.gif";
+import tell1 from "../../assets/img/tellmemore/tellMeMore1.png";
+import tell2 from "../../assets/img/tellmemore/tellMeMore2.png";
+import tell3 from "../../assets/img/tellmemore/tellMeMore3.png";
+import tell4 from "../../assets/img/tellmemore/tellMeMore4.png";
+import tell5 from "../../assets/img/tellmemore/tellMeMore5.png";
+import tell6 from "../../assets/img/tellmemore/tellMeMore6.png";
+import tell7 from "../../assets/img/tellmemore/tellMeMore7.png";
+import tell8 from "../../assets/img/tellmemore/tellMeMore8.png";
 
 const TellMeMore = () => {
+  const image = [
+    tellGif,
+    tell1,
+    tell2,
+    tell3,
+    tell4,
+    tell5,
+    tell6,
+    tell7,
+    tell8,
+  ];
+
   return (
     <div className="project_selected">
       <div className="carousel">
         <Carousel>
-          <div>
-            <img src={test} />
-          </div>
-          <div>
-            <img src={test} />
-          </div>
-          <div>
-            <img src={test} />
-          </div>
-          <div>
-            <img src={test} />
-          </div>
+          {image.map((elem, index) => {
+            return (
+              <div key={index}>
+                <img src={elem} alt="" />
+              </div>
+            );
+          })}
         </Carousel>
       </div>
       <div className="content_project_selected">
@@ -36,19 +51,19 @@ const TellMeMore = () => {
           </div>
           <div>
             <p>DUREE</p>
-            <span>2 Jours</span>
+            <span>2 Semaines</span>
           </div>
         </div>
         <hr />
         <div>
           <div className="info_main">
             <p>
-              Test technique réalisé en deux jours et portant sur l'univers
-              Marvel.
+              Certification de fin de formation réalisé en deux semaines
+              (validé).
             </p>
             <Link
               to={{
-                pathname: "https://sharp-lichterman-1c20d3.netlify.app",
+                pathname: "https://suspicious-northcutt-61fbf5.netlify.app/",
               }}
               target="_blank"
             >
@@ -58,69 +73,56 @@ const TellMeMore = () => {
             <p>Le but de cette application était de :</p>
             <ul>
               <li>
+                <p>Créer un nouveau formulaire</p>
+              </li>
+              <li>
                 <p>
-                  Faire apparaître la liste des personnages Marvel par ordre
-                  alphabétique sous forme de fiche photo
+                  Modifier le titre d'un formulaire ou supprimer un formulaire
                 </p>
               </li>
               <li>
                 <p>
-                  Au clic sur une de ces fiches, faire apparaître une page avec
-                  les comics liés au personnage
+                  Ajouter une nouvelle question (de type Texte ou de type Note
+                  de 1 à 5)
                 </p>
               </li>
               <li>
                 <p>
-                  Faire apparaître la liste de comics sous forme de fiche photo
+                  Modifier l'intitulé d'une question ou modifier l'ordre des
+                  questions ou supprimer une question et sauvegarder les
+                  changements
                 </p>
               </li>
               <li>
                 <p>
-                  Mettre en place un système de pagination et une barre de
-                  recherche
+                  Pouvoir répondre au formulaire créer et faire apparaitre les
+                  réponses dans un onglet réponses
                 </p>
-              </li>
-              <li>
-                <p>Mettre en place un système de gestion des favoris</p>
               </li>
             </ul>
             <h3>FUTURS DÉVELOPPEMENTS :</h3>
             <p>
-              Je réfléchis actuellement à une V2 pour diminuer les temps de
-              chargement au maximum, intégrer un système d'authentification et
-              simplifier le code. J'aimerais utiliser Redux, sur lequel je suis
-              entrain de me former, pour améliorer la gestion de cette data. Le
-              back aura également besoin d'être corrigé/amélioré. La V2
-              intégrera également le préprocesseur CSS, SASS que je trouve plus
-              ergonomique.
+              Je déjà réfléchis à une V2 qui permettrait de réduire le nombre de
+              lignes de code par deux. il faudra également modifier la partie
+              back-end qui n'est pas suffisamment optimisé, les models de
+              mongoose sont trop simples et demandent à être retravaillé. cela
+              qui bloque le bon fonctionnement de l'application.
             </p>
             <h3>STACK :</h3>
             <p>
-              React, axios, react-pagination, react-router-dom, NodeJS, cors,
-              dotenv, express, express-formidable, mongoos
+              React, axios, react-router-dom, NodeJS, cors, dotenv, express,
+              express-formidable, mongoose
             </p>
             <h3>CODE DU PROJET :</h3>
             <div className="info_git">
-              <Link
-                to={{
-                  pathname: "https://github.com/Arnaud95250/marvel-front",
-                }}
-                target="_blank"
-                className="button_git test2"
-              >
+              <Link className="button_git test2">
                 <div>
-                  <span>FrontEnd</span>
+                  <span>FrontEnd private</span>
                 </div>
               </Link>
-              <Link
-                to={{
-                  pathname: "https://github.com/Arnaud95250/marvel-back",
-                }}
-                target="_blank"
-                className="button_git"
-              >
+              <Link className="button_git">
                 <div>
-                  <span>BackEnd</span>
+                  <span>BackEnd private</span>
                 </div>
               </Link>
             </div>
