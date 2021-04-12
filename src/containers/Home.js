@@ -12,12 +12,12 @@ const Home = () => {
           <p>
             Ex-employé du BTP j'ai depuis bientôt 2 ans changé de secteur
             d'activité pour être (👩‍💻)développeur Web et mobile, front-end mais
-            aussi Back-end et tout ca en JAVASCRIPT 😉.
+            aussi Back-end et tout ça en JAVASCRIPT 😉.
           </p>
           <p>On a sûrement des choses à se dire sur votre prochain projet !</p>
           <p>
-            Sinon, Actuellement je suis à la recherche d'un poste comme dev
-            Full-Stack Js.
+            Si mon profil vous intérresse je suis actuellement à la recherche
+            d'un poste comme developpeur Full-Stack Js.
           </p>
         </div>
       </div>

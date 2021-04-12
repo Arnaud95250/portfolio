@@ -16,7 +16,7 @@ const Contact = () => {
           <p>
             Envoyez-moi un email à : <span>arnaud.malfait@hotmail.fr</span>
           </p>
-          <h2>Ou retrouvez moi sur :</h2>
+          <h2>Ou retrouvez-moi sur :</h2>
           <Link
             to={{
               pathname: "https://linkedin.com/in/arnaud-malfait",
