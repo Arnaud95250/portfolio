@@ -2,7 +2,7 @@
 import deliveroo from "../../assets/img/deliveroo/deliveroo.jpg";
 import marvel from "../../assets/img/marvel/marvel.jpg";
 import todolist from "../../assets/img/todolist/todolist.jpg";
-import tellMeMore from "../../assets/img/tellmemore/tell-me-more.png";
+// import tellMeMore from "../../assets/img/tellmemore/tell-me-more.png";
 import vinted from "../../assets/img/vinted/vinted.png";
 import chevronLeft from "../../assets/img/chevron-left.svg";
 
@@ -10,7 +10,7 @@ import chevronLeft from "../../assets/img/chevron-left.svg";
 import Marvel from "./Marvel";
 import Deliveroo from "./Deliveroo";
 import ToDoList from "./ToDoList";
-import TellMeMore from "./TellMeMore";
+// import TellMeMore from "./TellMeMore";
 import Vinted from "./Vinted";
 
 // Import package
@@ -29,16 +29,6 @@ const ListProjects = () => {
     <div id="list_projects">
       <h1>Mes projets</h1>
       <div className="content_list">
-        {/* TELLMEMORE */}
-        <div
-          style={{ border: "solid 0.1px green" }}
-          onClick={() => {
-            setProjectTellMeMore(true);
-            setList(false);
-          }}
-        >
-          <img src={tellMeMore} alt="tellMeMore" />
-        </div>
         {/* MARVEL */}
         <div
           onClick={() => {
@@ -133,20 +123,6 @@ const ListProjects = () => {
       </button>
       <ToDoList />
     </div>
-  ) : projectTellMeMore ? (
-    <div className="content_project">
-      <button
-        className="button_return"
-        onClick={() => {
-          setList(true);
-          setProjectTellMeMore(false);
-        }}
-      >
-        <img src={chevronLeft} alt="chevronLeft" />
-        Retour aux projets
-      </button>
-      <TellMeMore />
-    </div>
   ) : projectVinted ? (
     <div className="content_project">
       <button
@@ -166,3 +142,33 @@ const ListProjects = () => {
   );
 };
 export default ListProjects;
+
+{
+  /* TELLMEMORE */
+}
+{
+  /* <div
+          style={{ border: "solid 0.1px green" }}
+          onClick={() => {
+            setProjectTellMeMore(true);
+            setList(false);
+          }}
+        >
+          <img src={tellMeMore} alt="tellMeMore" />
+        </div> */
+}
+
+// ) : projectTellMeMore ? (
+//   <div className="content_project">
+//     <button
+//       className="button_return"
+//       onClick={() => {
+//         setList(true);
+//         setProjectTellMeMore(false);
+//       }}
+//     >
+//       <img src={chevronLeft} alt="chevronLeft" />
+//       Retour aux projets
+//     </button>
+//     <TellMeMore />
+//   </div>
